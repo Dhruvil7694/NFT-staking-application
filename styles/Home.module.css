@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  font-family: "Roboto Mono", monospace;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000; /* Set background color */
+}
+
+.gradientText0 {
+  background: -webkit-linear-gradient(#bfa3da, #84309c, #c735b0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientText1 {
+  background: -webkit-linear-gradient(#a79af9, #7aa8d2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientText2 {
+  background: -webkit-linear-gradient(#bfa3da, #743f93);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientText3 {
+  background: -webkit-linear-gradient(#070f2b, #1b1a55, #535c91, #4c4b60);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+  text-decoration-color: #84309c;
+}
+
+.title {
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: left;
+}
+
+.connect {
+  margin-bottom: 2rem;
+}
+
+.description {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #555;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 65px;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #131313;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 10px;
+  /* transition: transform 0.3s ease; */
+  /* max-width: 21%; */
+  overflow: hidden;
+  border: none;
+  /* box-shadow: 14px 14px 18px rgba(169, 160, 160, 0.1); */
+  margin: 0 auto;
+}
+
+.cardText {
+  padding: 1rem;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 12px;
+  border: none;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  background-color: #272c34;
+  opacity: 80%;
+}
+
+.card h2 {
+  margin: 0 0 0.75rem 0;
+  word-wrap: break-word;
+  width: 16rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  word-wrap: break-word;
+  width: 14rem;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-left: 0;
+  }
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 3rem;
+    line-height: 1.15;
+  }
+}
+
+.card,
+.footer {
+  border-color: #222;
+}
+.logo img {
+  filter: invert(1);
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 84px;
+  max-width: 1440px;
+}
+.navbarLogo {
+  font-size: x-large;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  font-family: "Roboto Mono", monospace;
+}
+
+.navbarLogo:hover {
+  transform: scale(1.1);
+}
+.navbarLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+  text-align: center;
+}
+.navbarLinks p {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  text-align: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Semi-transparent white background */
+  backdrop-filter: blur(70px); /* Add a blur effect to mimic glass */
+  color: #ffffff; /* Set your desired text color */
+  border-radius: 10px; /* Adjust the border-radius to create curved corners */
+  cursor: pointer;
+}
+.navbarLinks p:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1rem;
+}
+.profilePicture {
+  width: 40px;
+  height: 40px;
+  border-radius: 32px;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  transition: 0.2s all ease-in-out;
+}
+.profilePicture:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.profileMenu {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top: 6rem;
+  right: 100px;
+  width: 350px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.2); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px); /* Adjust blur radius as needed */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Adjust shadow as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 8px;
+  z-index: 1;
+  padding: 1rem;
+}
+.profileMenuAddress {
+  font-size: medium;
+  border: #000000 1px solid;
+  border-radius: 15px;
+  color: #000000;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.5rem;
+}
+.profileMenuLink {
+  user-select: none;
+  font-size: medium;
+  margin: 0.5rem 0;
+  color: #000000;
+  text-decoration: none;
+  border: #000000 1px solid;
+  border-radius: 15px;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.profileMenuLink:hover {
+  color: #a79af9;
+}
+.divider {
+  width: 100%;
+}
+
+.Button1 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #bcb7b7;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  margin-top: 10px;
+}
+
+.Button1:disabled {
+  pointer-events: none;
+}
+
+.Button1:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.Button1:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  text-align: left;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  height: 60vh;
+  margin-top: 5rem;
+  background: rgba(255, 255, 255, 0.2); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px); /* Adjust blur radius as needed */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Adjust shadow as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.heroContainerData {
+  margin-left: 1rem;
+}
+
+.heroContainerData h1 {
+  /* margin-left: 1rem; */
+  font-size: 3rem;
+}
+
+.heroContainerData p {
+  /* margin-left: 1rem; */
+  font-size: large;
+}
+.heroImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.heroImage {
+  /* display: inline-block; */
+  padding: 5px;
+  border: 2px solid #464242;
+  border-radius: 10px;
+  /* object-fit: cover; */
+  margin-bottom: 9px;
+  width: 400px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+
+.heroImageimg {
+  border: none;
+  border-radius: 3px;
+}
+
+.stakeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.stakeNFTCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.stakedNFTCard {
+  width: 30%;
+  border: #222 1px solid;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.stakedNFTCard:hover {
+  transform: translateY(-5px);
+}
+
+.stakeSection {
+  width: 30%;
+  border: #222 1px solid;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.heading {
+  border-top: 1px solid white;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: x-large;
+}
+
+.heading_para {
+  color: white;
+  font-size: large;
+}
+.stakeHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.stakeRewardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 2rem;
+  color: #fff;
+  /* border: #ffffff 1px solid; */
+  border-radius: 8px;
+  margin: 2rem;
+  background: rgba(255, 255, 255, 0.2); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px); /* Adjust blur radius as needed */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Adjust shadow as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.stakeRewardInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.stakeClaimableRewardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.claimableRewards {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0.75rem 0;
+}
+

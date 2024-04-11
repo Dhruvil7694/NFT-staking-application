@@ -1,0 +1,46 @@
+.aboutContainer {
+  padding: 2rem; /* Padding around the container */
+  border-radius: 10px; /* Rounded corners */
+  margin: 2rem 0; /* Margin at the top and bottom */
+  width: 100%; /* Full width */
+  background: rgba(255, 255, 255, 0.2); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px); /* Adjust blur radius as needed */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Adjust shadow as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.about {
+  max-width: 800px; /* Maximum width for the content */
+  margin: 0 auto; /* Center the content */
+  line-height: 1.6; /* Line height for readability */
+}
+
+.about h2 {
+  color: #ffffff; /* Darker text color for headings */
+  font-size: 2rem; /* Larger font size for headings */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+.about h3 {
+  color: #bdc1c5; /* Darker text color for subheadings */
+  font-size: 1.5rem; /* Larger font size for subheadings */
+  margin-bottom: 0.5rem; /* Space below the subheading */
+}
+
+.about ol {
+  list-style-type: decimal; /* Use numbers for ordered list */
+  padding-left: 20px; /* Indent the list */
+}
+
+.about ol li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+.about ol li strong {
+  color: #05192f; /* Blue text color for bold text */
+}
+
+.about p {
+  margin-bottom: 1rem; /* Space between paragraphs */
+}

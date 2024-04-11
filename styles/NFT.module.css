@@ -1,0 +1,102 @@
+.nftGridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.nftContainer {
+  width: 30%;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  outline: 10px solid rgba(255, 255, 255, 0.1);
+  transform: translate3d(0px, 0px, 0px);
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  max-height: auto;
+  transition: all 0.25s ease-in-out;
+}
+.stakeNftContainer {
+  width: 90%;
+  flex: 1 1 calc(33.33% - 20px);
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translate3d(0px, 0px, 0px);
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  max-height: auto;
+  transition: all 0.25s ease-in-out;
+}
+.nftGrid {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+
+.nftContainer:hover,
+.stakeNftContainer:hover {
+  cursor: pointer;
+  transform: translate3d(0px, -4px, 0px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.stakeNftContainerImg{
+  border: none;
+  border-radius: 10px;
+}
+.nftInfoContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* margin-top: auto; */
+}
+
+.nftInfoContainer p{
+  color: black;
+  font-size: large;
+
+}
+
+.nftName {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.nftTokenId {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 4px;
+  font-weight: 500;
+}
+
+.stakeSection {
+  width: 70%;
+  /* border: #222 1px solid; */
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.2); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px); /* Adjust blur radius as needed */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Adjust shadow as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.stakeHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
